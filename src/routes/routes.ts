@@ -6,11 +6,11 @@ import {
   deleteUser,
   updateUser
 } from '../controllers/userController'
-import { auth } from '../middleware/auth' // 🔒 import your JWT middleware
+import { auth } from '../middleware/auth'
 
 const router = express.Router()
 
-// ✅ Protect all user routes with JWT
+
 router.use(auth)
 
 router.get('/', getUsers)
