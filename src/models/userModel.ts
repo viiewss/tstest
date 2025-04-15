@@ -1,4 +1,3 @@
-// models/userModel.ts
 import { User } from '../types/user'
 
 const users: User[] = []
